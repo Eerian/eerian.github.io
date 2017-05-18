@@ -1,0 +1,382 @@
+/********************************************************/
+/*UNIVERSAL STYLE*/
+/********************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+
+    
+}
+
+
+
+/********************************************************/
+/*HEADER*/
+/********************************************************/
+
+
+/*Navigation*/
+
+nav {
+    background-color: #414b53;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+    margin-right: 120px;
+}
+
+.main-nav li {
+    display: inline;
+    margin-left: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-nav li a {
+    color: #fff;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 80%;
+    border: 1px solid transparent;
+}
+
+.main-nav li a:hover {
+    border: 1px solid #4bcaff;
+    color: #4bcaff;
+    
+}
+
+
+#name-logo {
+    height: 80px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+.menu-handle {
+    width: 100%;
+    background-color: #414b53;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.menu-icon {
+    color: white;
+    font-size: 1.4em;
+}
+/********************************************************/
+/*HERO BOX*/
+/********************************************************/
+
+.hero-row {
+    background-image: url('../img/hero-bg.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    margin-top: 9%;
+    display: inline-block;
+    margin-left: 30%;
+}
+
+.hero-text p {
+    font-size: 180%;
+    color: #fff;
+    background-color: #4a555d; opacity: 0.70;
+    margin-bottom: 10px;
+}
+
+.hero-text p:first-child {
+    padding-left: 100px;
+}
+
+
+
+
+/********************************************************/
+/*ABOUT SECTION*/
+/********************************************************/
+
+.about-section {
+    background-color: #4bcaff;
+}
+
+
+h3 {
+    text-align: center;
+    color: #fff;
+}
+
+/*
+h3:after {
+    display: block;
+    content: " ";
+    background-color: #fff;
+    width: 90%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 2%;  
+}
+
+*/  
+/*H3 UNDERLINE*/
+.line {
+    margin: 20px 0;
+    height: 2px;
+    border: 0;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#4bcaff), to(#4bcaff), color-stop(50%, #fff));
+}
+
+
+.box {
+    padding: 2%;
+}
+
+
+.large-icons {
+    font-size: 3.0em;
+    width: 15%;
+    display: block;
+    color: white;
+    margin: 0 auto;
+}
+
+
+.profile-pic {
+/*    position: relative;*/
+    background: url('/img/profile-pic.jpg');
+    width: 350px;
+    height: 300px;
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: inset 0px 0px 27px 15px #4bcaff;
+}
+
+
+.about-section p {
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.hobby-section {
+    margin-bottom: 10%;
+    text-align: left;
+}
+
+.hobby-icons {
+    color: azure;
+    font-size: 180%;
+    margin-right: 5%;
+}
+
+/**************************************************************************************************************/
+/*PROJECT SECTION / GALLEY*/
+/**************************************************************************************************************/
+
+.project-gallery {
+    list-style: none;
+    width: 100%;
+    
+}
+
+.project-pics li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.project-pics img {
+    width: 100%;
+    
+}
+
+
+
+/**************************************************************************************************************/
+                        /*MEDIA QUERIES*/
+/**************************************************************************************************************/
+
+
+@media screen and (max-width: 519px) and (min-width: 320px) { /*------------------------------------------*/
+    .menu-handle {
+        color: #fff;
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        
+    }
+    
+    
+    .expand-nav {
+        display: block;
+    }
+    
+    /*.hero-text {
+        margin-left: 2%;
+        margin-top: 30%;
+    }
+    
+    
+    .hero-text p {
+        font-size: 80%;
+        color: #fff;
+        background-color: #4a555d; opacity: 0.70;
+        margin-bottom: 20%;
+    }
+    
+    */
+    
+    .hero-text {
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+    .hero-text p:first-child {
+        text-align: center;
+        font-size: 130%;
+        color: #fff;
+        background-color: #4a555d; opacity: 0.70;
+        padding: 5%;
+        margin-top: -8%;
+        margin-bottom: 10%;
+    }
+
+    .hero-text p:last-child {
+        text-align: center;
+        font-size: 130%;
+        color: #fff;
+        background-color: #4a555d; opacity: 0.70;
+    }
+    
+}
+
+
+@media screen and (max-width: 780px) and (min-width: 520px) { /*------------------------------------------*/
+    /*    NAVIGATION*/
+    
+    .main-nav {
+        list-style: none;
+        margin-top: 40px;
+        position: relative;
+        width: 95%;
+        left: 22%;
+    
+    }
+
+    .main-nav li {
+        margin-left: 7px;
+        display: inline;
+        float: left;
+        
+    }
+    
+    
+    /*    HERO BOX*/
+    
+    .hero-text {
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+    .hero-text p:first-child {
+        text-align: center;
+        font-size: 130%;
+        color: #fff;
+        background-color: #4a555d; opacity: 0.70;
+        padding: 5%;
+        margin-top: -8%;
+        margin-bottom: 10%;
+    }
+
+    .hero-text p:last-child {
+        text-align: center;
+        font-size: 130%;
+        color: #fff;
+        background-color: #4a555d; opacity: 0.70;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) and (min-width: 781px) { /*------------------------------------------*/
+ 
+    /*    HERO BOX*/
+    .hero-text {
+        margin-top: 20%;
+        margin-left: 20%;
+        margin-right: 10%;
+    }
+
+
+    .hero-text p:first-child {
+        text-align: center;
+        font-size: 130%;
+        color: #fff;
+        background-color: #4a555d; opacity: 0.70;
+        padding: 5%;
+        margin-top: -8%;
+        margin-bottom: 10%;
+    }
+
+    .hero-text p:last-child {
+        text-align: center;
+        font-size: 130%;
+        color: #fff;
+        background-color: #4a555d; opacity: 0.70;
+    }
+    
+    /********************************************************/
+    /*ABOUT SECTION*/
+    /********************************************************/
+    
+    .box {
+        display: block;
+        width: 90%;
+        
+    }
+    
+    .profile-pic {
+        width: 600px;
+        height: 600px;
+    
+    }
+    
+    .large-icons {
+        text-align: center;
+        font-size: 3.0em;
+        width: 15%;
+        display: block;
+        color: white;
+        margin: 0 auto;
+    }
+
+    
+}
