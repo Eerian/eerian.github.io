@@ -30,13 +30,15 @@ body {
 
 nav {
     background-color: #414b53;
+    border-bottom: 2px solid #00c6ff;
 }
 
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 2.5%;
+    margin-top: 2%;
     margin-right: 7%;
+    margin-bottom: 2%;
 }
 
 .main-nav li {
@@ -55,7 +57,7 @@ nav {
 }
 
 .main-nav li a:hover {
-    border: 1px solid #4bcaff;
+    border: 1px solid #4bcaff; /*#4bcaff*/
     color: #4bcaff;
     
 }
@@ -65,8 +67,9 @@ nav {
     height: 80px;
     margin-top: 1%;
     margin-left: 1%;
-    margin-bottom: 1%;
 }
+
+
 
 .menu-handle {
     width: 100%;
@@ -118,10 +121,9 @@ nav {
 
 .hero-row {
     position: relative;
-    background-image: url('../img/hero-bg.jpg');
+    background-image: url('../img/hero-bg4.png');
     height: 500px;
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -149,7 +151,11 @@ nav {
 
 .about-section {
 /*    background-color: #4bcaff;*/
-    background-color: #00c6ff;
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 
@@ -202,8 +208,13 @@ h3:after {
 .about-section p {
     text-align: center;
     padding-top: 5%;
-    color: indigo;
+    color: #fff;
     
+}
+
+
+.about-section {
+    background-image: url('../img/about-bg5.png');
 }
 
 
@@ -214,13 +225,8 @@ h3:after {
 }
 
 .box {
-    border: 6px solid #fff;
-    box-shadow:
-        0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
-        0 10px 0 -5px #eee, /* The second layer */
-        0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
-        0 20px 0 -10px #eee, /* The third layer */
-        0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
+    border: 3px solid #fff;
+
 }
 
 .hobby-icons {
@@ -289,6 +295,7 @@ label {
 
 input, textarea{
     font: 1em sans-serif;
+    color: #fff;
     width: 100%;
     height: 40px;
     margin-top: 2%;
@@ -298,7 +305,7 @@ input, textarea{
 }
 
 textarea {
-    height: 180px
+    height: 180px;
 }
 
 button {
@@ -342,6 +349,53 @@ button {
 .contact-info p {
     color: #fff;
 }
+
+
+
+/*Remove placeholder on field click*/
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+textarea:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+
+/*Alert Classes jQuery appends for messages*/
+.alert {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    color: #c09853;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+
+.alert-success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+
+.alert-error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+
+
+
+
 
 
 /*SOCIAL ICONS*/

@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/simple-grid.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.10.0/css/alertify.min.css"/>
 <!--  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" >-->
   <script src="https://use.fontawesome.com/a74dfb9b35.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -31,8 +32,8 @@
  <section class="front-page">
     <div class="row hero-row">
             <div class="hero-text">
-                <p>"I'm looking for the unexpected.</p>
-                <p>I'm looking for something I've never seen before"</p>    
+                <p>"Always code as if the guy who ends up maintaining your code</p>
+                <p>will be a violent psychopath who knows where you live"</p>    
             </div>
     </div>
  </section>
@@ -48,7 +49,7 @@
             <p>My name is Erion. I am a web developer in the making...been in the making for a while now but new technologies keep showing up so it feels like it's a never ending process. I live in NYC originally from Albania (Google it I know you never heard it of unless you've seen the Euro 2016). I majored in computer science but I got tired of learning useless things and school bullshit that wasn't getting me far. So I decided to go my own way and teach myself what I really want to do and here I am doing web development. Learning through books, various tutorials on youtube, free and paid online teaching services. Never attended a bootcamp although maybe I should.</p>
         </div>
         <div class="col-4 box">
-            <i class="fa fa-info-circle large-icons"></i>
+            <i class="fa fa-smile-o large-icons"></i>
             <h3>Hobbies</h3>
             <hr class="line"/>
             <div class="hobby-section">
@@ -118,23 +119,26 @@
     <div class="row">
         <h1>Contact</h1>
     </div>
-    <form action="#" method="post">
-       <div>
+    <form id="contact-form">
+        <div>
            <label for="name">Name:</label>
-           <input type="text" id="name" name="user_name">
+           <input type="text" id="name" name="name" required placeholder="Name">
        </div>
        <div>
            <label for="mail">E-mail:</label>
-           <input type="email" id="mail" name="user_mail">
+           <input type="email" id="mail" name="email" required placeholder="email@address.com">
        </div>
        <div>
            <label for="message">Message:</label>
-           <textarea id="msg" name="user_message" cols="20" rows="6"></textarea>
+           <textarea id="msg" name="message" cols="20" required rows="6" placeholder="Type your message"></textarea>
        </div>
+           
        <div class="button">
            <button type="submit">Send Message</button>
        </div>
     </form>
+    
+    
     <div class="contact-info">
         <p>Erion Pali</p>
         <p>789 Waring Ave</p>
@@ -143,9 +147,9 @@
             <div class="social-media">
                 <ul class="social-icons">
                     <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="http://github.com"><i class="fa fa-github"></i> </a></li>
+                    <li><a href="https://www.linkedin.com/in/erion-pali-19560088/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="http://twitter.com/e3rian"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://github.com/eerian"><i class="fa fa-github"></i> </a></li>
                 </ul>
             </div>
     </div>
@@ -172,6 +176,8 @@
  
 <script src="js/script.js"></script>
 <script src="vendors/js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>  <!--Validation-->
+<script src="vendors/js/alertify.min.js"></script>
 <!--    <script src="vendors/js/jquery-3.1.1.min.js"></script>-->
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>-->
 
