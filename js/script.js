@@ -7,8 +7,8 @@ $(document).ready(function(){
        }); 
     });
     
+    
     /*Submitting form with AJAX*/
-
     var $contactForm = $('#contact-form');
     $contactForm.submit(function(e) {
         e.preventDefault();
@@ -29,29 +29,28 @@ $(document).ready(function(){
                 $contactForm.append('<div class="alert alert-error">Ops, there was an error.</div>');
             }
         });
+        $("#contact-form").get(0).reset();
     });
     
-});
-
-
-
-/* Navigation scroll */
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    
+    /*Code copied from Stackoverflow.   NAVIGATION SCROLL to ANQUORS*/
+    
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 70
                 }, 1000);
                 return false;
             }
         }
     });
+
+
+    
 });
-
-
 
 /*Activate Sticky nav*/
 
@@ -62,6 +61,12 @@ $(window).scroll(function(){
         $('nav').removeClass('sticky-nav');
     }
 });
+
+
+
+
+
+
 
 
 
