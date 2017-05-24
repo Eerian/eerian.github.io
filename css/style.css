@@ -567,6 +567,12 @@ footer p {
 
 @media screen and (max-width: 1029px) { /*--------------------------------------------*/
     
+    .sticky-nav .main-nav{
+        margin-top: -11px;
+    }
+    
+    
+    
     .profile-pic {
         max-width: 100%; 
     }
@@ -633,7 +639,15 @@ footer p {
 }
 
 @media screen and (max-width: 760px) { /*--------------------------------------------------*/
-   
+    
+    /*Navigation*/
+    
+    .main-nav {
+        width: 100%;
+    }
+    
+
+    
     .hero-text p {
         margin-bottom: 10%;
         font-size: 150%;
@@ -686,10 +700,11 @@ footer p {
 
 
 
-@media screen and (max-width: 500px) { /*--------------------------------------------------*/
+@media screen and (max-width: 530px) { /*--------------------------------------------------*/
 
     /*NAVIGATION*/
-
+    
+    
     .main-nav li {
         display: block;
         width: 30%;
@@ -702,12 +717,15 @@ footer p {
     }
 
     .main-nav {
-        display: none
+        display: none;
     }
 
     .expand-nav {
         display: block;
+        width: 100%;
+        
     }
+
 
 
 

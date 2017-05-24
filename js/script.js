@@ -50,17 +50,20 @@ $(document).ready(function(){
 
 
     
+    /*Activate Sticky nav*/
+
+    $(window).scroll(function(){
+        if($(document).scrollTop() > 100) {
+            $('nav').addClass('sticky-nav');
+        } else {
+            $('nav').removeClass('sticky-nav');
+        }
+    });
+    
+    
+    
 });
 
-/*Activate Sticky nav*/
-
-$(window).scroll(function(){
-    if($(document).scrollTop() > 100) {
-        $('nav').addClass('sticky-nav');
-    } else {
-        $('nav').removeClass('sticky-nav');
-    }
-});
 
 
 
