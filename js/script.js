@@ -1,14 +1,14 @@
-//Toggle menu
+//Toggle Mobile Navigation
 
 $(document).ready(function(){
-    $(".menu-handle").click(function(){
-       $(".main-nav").slideToggle(function(){
-           $(this).toggleClass("expand-nav").css("display", " ");
-       }); 
+    $(".menu-handle").click(function(e){
+        e.preventDefault;
+        $("nav ul").toggleClass("show-nav");
+        
     });
+//    
     
-    
-    /*Submitting form with AJAX*/
+    /*Submitting form with AJAX using FormSpree.io*/
     var $contactForm = $('#contact-form');
     $contactForm.submit(function(e) {
         e.preventDefault();
