@@ -1,40 +1,44 @@
 /********************************************************/
+
+
 /*UNIVERSAL STYLE*/
+
+
 /********************************************************/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-html, body{
+html,
+body {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
 }
 
 body {
-    overflow-x: hidden;  /*Removed the horizontal scroll*/
-
+    overflow-x: hidden;
+    /*Removed the horizontal scroll*/
 }
 
 
-
-
 /********************************************************/
+
+
 /*HEADER*/
+
+
 /********************************************************/
+
 
 /*Navigation*/
 
 nav {
     background-color: #414b53;
     border-bottom: 2px solid #00c6ff;
-
 }
-
-
 
 .main-nav {
     float: right;
@@ -42,14 +46,12 @@ nav {
     margin-top: 2%;
     margin-right: 7%;
     margin-bottom: 2%;
-
 }
 
 .main-nav li {
     display: inline;
     margin-left: 30px;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 .main-nav li a {
@@ -62,19 +64,16 @@ nav {
 }
 
 .main-nav li a:hover {
-    border: 1px solid #4bcaff; /*#4bcaff*/
+    border: 1px solid #4bcaff;
+    /*#4bcaff*/
     color: #4bcaff;
-    
 }
-
 
 #name-logo {
     height: 80px;
     margin-top: 0.40%;
     margin-left: 1%;
 }
-
-
 
 .menu-handle {
     width: 100%;
@@ -86,7 +85,6 @@ nav {
     display: none;
 }
 
-
 .menu-icon {
     color: white;
     font-size: 1.4em;
@@ -95,31 +93,32 @@ nav {
 
 /*Sticky Nav*/
 
-
 .sticky-nav {
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     box-shadow: 0 3px 2px #2ddbcd;
     z-index: 99999;
 }
-
 
 .sticky-nav #name-logo {
     height: 60px;
     margin-top: 0.5%;
 }
 
-.sticky-nav .main-nav{
+.sticky-nav .main-nav {
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
 
-
 /********************************************************/
+
+
 /*HERO BOX*/
+
+
 /********************************************************/
 
 .hero-row {
@@ -140,25 +139,27 @@ nav {
 
 .hero-text p {
     text-align: center;
-    background-color: #4a555d; opacity: 0.70;
+    background-color: #4a555d;
+    opacity: 0.70;
     font-size: 180%;
     color: #fff;
     margin-bottom: 1%;
 }
 
 
-
 /********************************************************/
+
+
 /*ABOUT SECTION*/
+
+
 /********************************************************/
-
-
-
 
 h3 {
     text-align: center;
     color: #fff;
 }
+
 
 /*
 h3:after {
@@ -171,16 +172,17 @@ h3:after {
     margin-top: 2%;  
 }
 
-*/  
+*/
+
+
 /*H3 UNDERLINE*/
+
 .line {
     margin: 20px 0;
     height: 2px;
     border: 0;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(#4bcaff), to(#4bcaff), color-stop(50%, #fff));
 }
-
-
 
 .large-icons {
     font-size: 3.0em;
@@ -190,26 +192,21 @@ h3:after {
     margin: 0 auto;
 }
 
-
 .profile-pic {
     background: url('/img/profile-pic.jpg');
     max-width: 100%;
     height: 350px;
-    background-size:cover;
+    background-size: cover;
     margin: 0 auto;
     box-shadow: inset 0px 0px 35px 8px #4bcaff;
 }
-
-
 
 .about-section p {
     font-style: italic;
     text-align: center;
     padding-top: 5%;
     color: #fff;
-    
 }
-
 
 .about-section {
     background-image: url('../img/about-bg6.png');
@@ -217,12 +214,9 @@ h3:after {
     background-size: cover;
 }
 
-
-
 .hobby-section {
     margin-bottom: 10%;
     text-align: left;
-    
 }
 
 .box span {
@@ -233,40 +227,40 @@ h3:after {
 
 
 /*box shadow effect taken from CSS Tricks*/
-.box:before, .box:after{
-    
-        z-index: -1;
-        position: absolute;
-        content: "";
-        bottom: 25px;
-        left: 10px;
-        width: 50%;
-        top: 80%;
-        max-width:300px;
-        background: #777;
-        -webkit-box-shadow: 0 35px 20px #777;
-        -moz-box-shadow: 0 35px 20px #777;
-        box-shadow: 0 35px 20px #777;
-        -webkit-transform: rotate(-8deg);
-        -moz-transform: rotate(-8deg);
-        -o-transform: rotate(-8deg);
-        -ms-transform: rotate(-8deg);
-        transform: rotate(-8deg);
+
+.box:before,
+.box:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 35px 20px #777;
+    -moz-box-shadow: 0 35px 20px #777;
+    box-shadow: 0 35px 20px #777;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
 }
 
 .box:after {
-    
-        -webkit-transform: rotate(8deg);
-        -moz-transform: rotate(8deg);
-        -o-transform: rotate(8deg);
-        -ms-transform: rotate(8deg);
-        transform: rotate(8deg);
-        right: 10px;
-        left: auto;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
 }
 
-/*End of box shadow effect*/
 
+/*End of box shadow effect*/
 
 .hobby-icons {
     color: azure;
@@ -274,8 +268,13 @@ h3:after {
     margin-right: 5%;
 }
 
+
 /**************************************************************************************************************/
+
+
 /*PROJECT SECTION / GALLERY*/
+
+
 /**************************************************************************************************************/
 
 .projects-section h1 {
@@ -286,13 +285,10 @@ h3:after {
     display: block;
 }
 
-
 .gallery {
     padding-top: 0.5%;
     padding-left: 1%;
     margin-bottom: 4%;
-  
-
 }
 
 .gallery li {
@@ -302,14 +298,11 @@ h3:after {
     margin-left: 10px;
     overflow: hidden;
     background-color: #000;
-
 }
-
 
 .gallery li img {
     width: 100%;
     height: auto;
-
 }
 
 .gallery li a img {
@@ -317,11 +310,11 @@ h3:after {
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s;
 }
+
 .gallery li a img:hover {
     transform: scale(1.05);
     opacity: 1;
 }
-
 
 .clearfix:after {
     content: " ";
@@ -330,9 +323,12 @@ h3:after {
 }
 
 
-
 /******************************************************************************************/
+
+
 /*CONTACT FORM*/
+
+
 /******************************************************************************************/
 
 form {
@@ -349,7 +345,8 @@ label {
     color: #fff;
 }
 
-input, textarea{
+input,
+textarea {
     font: 1em sans-serif;
     color: #fff;
     width: 100%;
@@ -378,10 +375,9 @@ button:hover {
     background-color: #379de6;
 }
 
-
 .contact {
     background-image: url('../img/contact-bg.png');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
@@ -411,20 +407,61 @@ button:hover {
 }
 
 
-
 /*Remove placeholder on field click*/
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
-input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
-input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
-textarea:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
-textarea:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+
+/* Firefox 18- */
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+
+/* Firefox 19+ */
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+
+/* oldIE ;) */
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+
+/* Firefox 18- */
+
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+
+/* Firefox 19+ */
+
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+
+/* oldIE ;) */
 
 
 /*Alert Classes jQuery appends for messages*/
+
 .alert {
     padding: 8px 35px 8px 14px;
     margin-bottom: 18px;
@@ -437,25 +474,17 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
     border-radius: 4px;
 }
 
-
-
 .alert-success {
     color: #468847;
     background-color: #dff0d8;
     border-color: #d6e9c6;
 }
 
-
 .alert-error {
     color: #b94a48;
     background-color: #f2dede;
     border-color: #eed3d7;
 }
-
-
-
-
-
 
 
 /*SOCIAL ICONS*/
@@ -475,12 +504,11 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
     padding-top: 15%;
     font-size: 25px;
     margin-right: 15px;
-    
 }
 
 .fa-facebook {
-    background:#3b5998;
-} 
+    background: #3b5998;
+}
 
 .fa-facebook:hover {
     background: #4949e8;
@@ -499,7 +527,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 }
 
 .fa-twitter:hover {
-    background: #46d4fe; 
+    background: #46d4fe;
 }
 
 .fa-github {
@@ -512,7 +540,11 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 
 
 /******************************************************************************************/
+
+
 /*CONTACT FORM*/
+
+
 /******************************************************************************************/
 
 footer {
@@ -521,14 +553,11 @@ footer {
     padding-top: 2%;
 }
 
-
 footer ul {
     width: 30%;
     text-align: center;
     margin: 0 auto;
 }
-
-
 
 footer ul li {
     display: inline;
@@ -557,230 +586,159 @@ footer p {
 }
 
 .fa-heart {
-    color: #ea0000; 
+    color: #ea0000;
     padding: 0 3px;
 }
 
 
-
-
-
-/**************************************************************************************************************/
-                        /*MEDIA QUERIES*/
 /**************************************************************************************************************/
 
 
+/*MEDIA QUERIES*/
 
-@media screen and (max-width: 1029px) { /*--------------------------------------------*/
-    
-    .sticky-nav .main-nav{
+
+/**************************************************************************************************************/
+
+@media screen and (max-width: 1029px) {
+    /*--------------------------------------------*/
+    .sticky-nav .main-nav {
         margin-top: -11px;
     }
-    
-    
-    
     .profile-pic {
-        max-width: 100%; 
+        max-width: 100%;
     }
-    
     .about-section {
         background-size: cover;
     }
-    
-
     #name-logo {
         display: block;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 0 auto;
     }
-
     /*Navigation*/
     .main-nav {
         text-align: center;
         display: block;
         width: 95%;
-        margin: 2% auto; 
+        margin: 2% auto;
     }
-    
-    
-    
     /*About Section*/
     .box {
         width: 45%;
     }
-
-    
-    
     .gallery li {
         width: 45%;
     }
-
-
     .gallery {
         padding-left: 6%;
     }
-
-
     /*Form section*/
-    
     form {
         width: 100%;
-
     }
-
-
     .contact-info {
         width: 95%;
         margin-bottom: 20%;
     }
-    
     /*FOOTER*/
-
     footer ul {
         width: 55%;
     }
-
-
 }
 
-@media screen and (max-width: 760px) { /*--------------------------------------------------*/
-    
+@media screen and (max-width: 760px) {
+    /*--------------------------------------------------*/
     /*Navigation*/
-    
     .main-nav {
         width: 100%;
     }
-    
-
-    
+    .main-nav li {
+        margin-left: 20px;
+    }
     .hero-text p {
         margin-bottom: 10%;
         font-size: 150%;
-    } /*1% on other breakpoints*/ 
-
-    
-    /*About Section*/
-
-    
-    .profile-pic {
-        max-width: 100%; 
     }
-    
-    
+    /*1% on other breakpoints*/
+    /*About Section*/
+    .profile-pic {
+        max-width: 100%;
+    }
     .box {
         width: 97%;
     }
-
     .large-icons {
         text-align: center;
     }
-
     .box p {
         text-align: center;
         padding-top: 5%;
     }
-
-
-
     .hobby-section {
         padding-left: 2%
     }
-
-    
-    
     .gallery li {
         width: 45%;
     }
-
     .gallery {
         padding-left: 6%;
     }
-    
     .contact-info {
         margin-bottom: 25%;
     }
-
 }
 
-
-
-
-@media screen and (max-width: 529px) { /*--------------------------------------------------*/
-
+@media screen and (max-width: 529px) {
+    /*--------------------------------------------------*/
     /*NAVIGATION*/
-
-
     .main-nav {
         display: none;
-     
     }
-   
-    
     .show-nav {
         display: block;
-
     }
-    
-
-    
     .main-nav li {
         display: block;
         width: 30%;
         margin: 0 auto;
     }
-
     .menu-handle {
         color: #fff;
         display: block;
     }
-    
-    
     .sticky-nav .menu-handle {
         margin-top: -20px;
     }
-    
-  
-
-
     /* Front section*/
-
-    .hero-text {top: 10%;} /* 30% on other breakpoints*/
-
-
+    .hero-text {
+        top: 10%;
+    }
+    /* 30% on other breakpoints*/
     .hero-text p {
         margin-bottom: 15%;
         font-size: 150%;
-    } /*1% on other breakpoints*/ 
-
-
-    .hero-row {
-        background-repeat:repeat-y;
     }
-
-    
-    
-    
-    
-    
+    /*1% on other breakpoints*/
+    .hero-row {
+        background-repeat: repeat-y;
+    }
     /*Projects Section*/
-    .gallery li {width: 100%;}
-
+    .gallery li {
+        width: 100%;
+    }
     .gallery {
         padding-left: 1%;
-        padding-right: 5.2%       
+        padding-right: 5.2%
     }
-
     /******************FORM************************/
-
     form {
         width: 100%;
         margin: 0 auto;
     }
-
-
-    .contact h1 {width: 45%;}
-
+    .contact h1 {
+        width: 45%;
+    }
     .contact-info {
         width: 100%;
         right: 1%;
@@ -788,21 +746,16 @@ footer p {
         margin-top: 5%;
         margin-bottom: 40%;
     }
-
-    
     /*Projects section*/
-    .projects-section h1 {width: 50%;}
-
-
+    .projects-section h1 {
+        width: 50%;
+    }
     /*SOCIAL ICONS*/
-
     .social-icons li {
         margin-top: 4%;
         list-style-type: none;
         float: left;
-
     }
-
     .social-icons li a i {
         border-radius: 20px;
         color: #fff;
@@ -812,11 +765,8 @@ footer p {
         padding-top: 15%;
         font-size: 25px;
         margin-right: 15px;
-
     }
-
     /*FOOTER*/
-
     footer ul {
         width: 100%;
     }
