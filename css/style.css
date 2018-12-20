@@ -317,6 +317,14 @@ h3:after {
     opacity: 1;
 }
 
+.gallery li p {
+    color: #4bcaff;
+    background: #4a555d;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
 .clearfix:after {
     content: " ";
     display: block;
