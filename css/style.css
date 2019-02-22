@@ -325,6 +325,23 @@ h3:after {
     padding-bottom: 2px;
 }
 
+.git-links {
+    color: #fff;
+    padding-bottom: 20%;
+}
+
+.git-logos {
+    color: #fff;
+    font-size: 150%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-left: -50%;
+}
+
+.gallery li button {
+    background: #000;
+}
+
 .clearfix:after {
     content: " ";
     display: block;
