@@ -516,7 +516,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .social-icons li:nth-child(4) {
-    color: white;
+    color: #fff;
 }
 
 
@@ -529,7 +529,7 @@ textarea:focus:-ms-input-placeholder {
 } */
 
 .fa-codepen {
-    background: black;
+    background: #000;
 }
 
 .fa-linkedin {
