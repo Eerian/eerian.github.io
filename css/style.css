@@ -515,12 +515,21 @@ textarea:focus:-ms-input-placeholder {
     margin-right: 15px;
 }
 
-.fa-facebook {
+.social-icons li:nth-child(4) {
+    color: white;
+}
+
+
+/* .fa-facebook {
     background: #3b5998;
 }
 
 .fa-facebook:hover {
     background: #4949e8;
+} */
+
+.fa-codepen {
+    background: black;
 }
 
 .fa-linkedin {
@@ -531,13 +540,15 @@ textarea:focus:-ms-input-placeholder {
     background: #419cca;
 }
 
-.fa-twitter {
-    background: #00aced;
-}
 
-.fa-twitter:hover {
+/* .fa-twitter {
+    background: #00aced;
+} */
+
+
+/* .fa-twitter:hover {
     background: #46d4fe;
-}
+} */
 
 .fa-github {
     background: #222222;
@@ -545,6 +556,11 @@ textarea:focus:-ms-input-placeholder {
 
 .fa-github:hover {
     background: #040204;
+}
+
+.fa-at {
+    color: white;
+    font-size: 200%;
 }
 
 
