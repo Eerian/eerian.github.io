@@ -54,6 +54,14 @@ nav {
     font-family: 'Ubuntu', sans-serif;
 }
 
+#resume {
+    color: rgb(235, 53, 53);
+}
+
+#resume:hover {
+    border: 1px solid red;
+}
+
 .main-nav li a {
     color: #fff;
     padding: 5px 15px;
